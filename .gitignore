@@ -1,0 +1,9 @@
+node_modules
+*.log
+meteor/react-build-generated
+meteor/public/assets/*.*
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+dump
+.idea/
