@@ -10,15 +10,14 @@ module.exports = [
     name: 'client',
     devtool: 'inline-source-map',
     context: path.join(__dirname, '..'),
-    entry: './react',
+    entry: './app',
     output: {
       path: path.join(__dirname, '..', 'meteor', 'react-build-generated', 'client'),
       filename: 'main.js',
       publicPath: '/assets/'
     },
     externals: {
-      'react': 'React',
-      'react-router': 'ReactRouter'
+      'react': 'React'
     },
     plugins: [
       new webpack.DefinePlugin({
@@ -45,15 +44,14 @@ module.exports = [
     name: 'server',
     devtool: 'inline-source-map',
     context: path.join(__dirname, '..'),
-    entry: './react',
+    entry: './app',
     output: {
       path: path.join(__dirname, '..', 'meteor', 'react-build-generated', 'server'),
       filename: 'main.js',
       publicPath: '/assets/'
     },
     externals: {
-      'react': 'React',
-      'react-router': 'ReactRouter'
+      'react': 'React'
     },
     plugins: [
       new webpack.DefinePlugin({

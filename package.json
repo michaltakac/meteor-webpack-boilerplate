@@ -1,10 +1,10 @@
 {
-  "name": "kickstart",
-  "description": "Kickstart a project with the most productive stack you ever used",
-  "version": "0.2.0",
+  "name": "meteor-webpack-boilerplate",
+  "description": "A starting point for small or large-scale MeteorJS applications with ES6 modules support.",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thereactivestack/kickstart.git"
+    "url": "https://github.com/michaltakac/meteor-webpack-boilerplate"
   },
   "scripts": {
     "lint": "eslint --ext .js,.jsx .",
@@ -37,7 +37,6 @@
     "less-loader": "^2.2.1",
     "node-sass": "^3.3.3",
     "null-loader": "^0.1.1",
-    "react-router": "^1.0.0-rc1",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.6",

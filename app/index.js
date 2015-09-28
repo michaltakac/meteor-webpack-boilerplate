@@ -18,18 +18,22 @@ const rootRoute = {
         {
           path: '/calendar',
           component: require('./routes/Calendar'),
-          onEnter: { ensureSignedIn }
+          onEnter: [AccountsTemplates.ensureSignedIn]
         },
         require('./routes/Course'),
         require('./routes/Grades'),
         require('./routes/Messages'),
         require('./routes/Profile')
       ]
+    },
+    {
+      path: '/access',
+      component: require('./components/Access')
     } 
   ]
 }
 
 React.render(
   <Router history={history} routes={rootRoute} />,
-  document.getElementById('example')
+  document.getElementById('root')
 )
